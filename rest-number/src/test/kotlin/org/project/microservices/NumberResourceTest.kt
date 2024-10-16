@@ -11,7 +11,7 @@ import org.junit.jupiter.api.Test
 class NumberResourceTest {
 
     @Test
-    fun testHelloEndpoint() {
+    fun `should get isbn numbers`() {
         given()
             .`when`().get("/api/numbers")
             .then()
