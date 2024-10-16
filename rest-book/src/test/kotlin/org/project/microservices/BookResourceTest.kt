@@ -27,7 +27,7 @@ class BookResourceTest {
             .`when`().post("/api/books")
             .then()
             .statusCode(200)
-            .body("isbn_13", startsWith("13_"))
+            .body("isbn_13", startsWith("13-"))
             .body("title", `is` ("String"))
             .body("author", `is` ("String"))
             .body("year_of_publishing", `is` (1989))
