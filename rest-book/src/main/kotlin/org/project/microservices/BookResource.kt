@@ -1,14 +1,18 @@
 package org.project.microservices
 
+import jakarta.inject.Inject
 import jakarta.ws.rs.GET
 import jakarta.ws.rs.Path
 import jakarta.ws.rs.Produces
 import jakarta.ws.rs.core.MediaType
+import org.jboss.logging.Logger
+import kotlin.random.Random
 
 @Path("/api/books")
 class BookResource {
 
-    @GET
-    @Produces(MediaType.TEXT_PLAIN)
-    fun hello() = "Hello RESTEasy"
+    @Inject
+    lateinit var log: Logger
+
+
 }
