@@ -26,7 +26,7 @@ class BookResourceTest {
             .body(book)
             .`when`().post("/api/books")
             .then()
-            .statusCode(200)
+            .statusCode(201)
             .body("isbn_13", startsWith("13-"))
             .body("title", `is` ("String"))
             .body("author", `is` ("String"))
