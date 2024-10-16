@@ -5,7 +5,7 @@ import jakarta.ws.rs.Path
 import jakarta.ws.rs.Produces
 import jakarta.ws.rs.core.MediaType
 
-@Path("api/numbers")
+@Path("/api/numbers")
 class NumberResource {
 
     @GET
